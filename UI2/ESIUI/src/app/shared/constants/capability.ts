@@ -13,3 +13,11 @@ export const SEARCH_CAPABILITY_QUERY = gql`
   searchCapabilities(searchQuery:$searchQuery){ __typename ...BasicCapabilityFields }
  }  
 `;
+
+export const SAVE_MUTATION = gql`
+mutation save($name: String!, $description: String!){  
+    save(name:$name, description:$description){ 
+        id, name, description
+     }
+}
+`;

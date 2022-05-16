@@ -30,6 +30,10 @@ import { CapabilityResponse, CapabilitiesResponse, SEARCH_CAPABILITY_QUERY, CAPA
           
       }
 
+      save (name: string, description: string) {
+          
+      }
+
       getCapability(capabilityId: string): Observable<CapabilityResponse> {
         return this.getCapabilityQL.watch({
           capabilityId: capabilityId
